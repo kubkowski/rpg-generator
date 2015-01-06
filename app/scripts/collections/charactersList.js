@@ -5,9 +5,9 @@ RpgGenerator.Collections = RpgGenerator.Collections || {};
 (function () {
     'use strict';
 
-    RpgGenerator.Collections.CharacterList = Backbone.Collection.extend({
+    RpgGenerator.Collections.CharactersList = Backbone.Collection.extend({
 
-        model: RpgGenerator.Models.CharacterList
+        model: RpgGenerator.Models.Character
 
     });
 
