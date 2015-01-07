@@ -17,7 +17,7 @@ RpgGenerator.Routers = RpgGenerator.Routers || {};
         },
 
         k6: function () {
-            $('.content').html(dice(6));
+            $('.content').html(dices(3, 6, 0));
         }
     });
 
