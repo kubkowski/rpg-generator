@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="bower_components/mocha/mocha.css">
 </head>
 <body>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+
     <div id="mocha"></div>
     <script src="bower_components/mocha/mocha.js"></script>
     <script>mocha.setup('bdd')</script>
@@ -17,19 +21,20 @@
     </script>
 
     <!-- include source files here... -->
-
-    <script src="routers/router.js"></script>
-    <script src="models/character.js"></script>
-    <script src="collections/characterList.js"></script>
-    <script src="views/header.js"></script>
-    <script src="helpers/rpg.js"></script>
-    <script src="views/characterListView.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/templates.js"></script>
+    <script src="scripts/helpers/rpg.js"></script>
+    <script src="scripts/models/character.js"></script>
+    <script src="scripts/collections/charactersList.js"></script>
+    <script src="scripts/views/header.js"></script>
+    <script src="scripts/views/characterListView.js"></script>
+    <script src="scripts/routes/router.js"></script>
 
     <!-- include spec files here... -->
 
     <script src="spec/test.js"></script>
     <script src="helpers/rpg.spec.js"></script>
-    
+
     <script>mocha.run()</script>
 </body>
 </html>
