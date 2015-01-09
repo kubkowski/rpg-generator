@@ -5,15 +5,15 @@ RpgGenerator.Views = RpgGenerator.Views || {};
 (function () {
     'use strict';
 
-    RpgGenerator.Views.CharacterListView = Backbone.View.extend({
+    RpgGenerator.Views.NewCharacterView = Backbone.View.extend({
 
-        template: JST['app/scripts/templates/characterListView.ejs'],
+        template: JST['app/scripts/templates/newCharacterView.ejs'],
 
-        tagName: '',
+        tagName: 'div',
 
         id: '',
 
-        className: '.table-content',
+        className: '',
 
         events: {},
 
