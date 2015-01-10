@@ -24,7 +24,8 @@ RpgGenerator.Routers = RpgGenerator.Routers || {};
         },
 
         newCharacter: function () {
-            
+            var newCharacterView = new RpgGenerator.Views.NewCharacterView();
+            newCharacterView.render();
         }
     });
 

@@ -9,12 +9,12 @@ RpgGenerator.Views = RpgGenerator.Views || {};
 
         template: JST['app/scripts/templates/charactersListView.ejs'],
 
-        el: '#content',
+        el: '#table-content',
 
         events: {},
 
         initialize: function () {
-            this.listenTo(this.model, 'change', this.render);
+
         },
 
         render: function () {
