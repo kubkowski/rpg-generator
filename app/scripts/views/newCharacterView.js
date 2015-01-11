@@ -11,12 +11,23 @@ RpgGenerator.Views = RpgGenerator.Views || {};
 
         el: '#content',
 
-        events: {},
+        events: {
+            'click #roll' : 'roll'
+        },
 
         render: function () {
             this.$el.html(this.template);
-        }
+        },
 
+        roll: function (e) {
+            e.preventDefault();
+            $('#strength').val(dices(3, 6, 0));
+            $('#dexterity').val(dices(3, 6, 0));
+            $('#constitution').val(dices(3, 6, 0));
+            $('#intelligence').val(dices(3, 6, 0));
+            $('#wisdom').val(dices(3, 6, 0));
+            $('#charisma').val(dices(3, 6, 0));
+        }
     });
 
 })();
